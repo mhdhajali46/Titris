@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Modern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+
+    <div class="ui-bar">
+      <div class="box"><span>Moves</span><div id="moves">0</div></div>
+      <div class="box"><span>Goal</span><div><b>Clear</b> <span id="goal">20</span> Lines</div></div>
+      <div class="box"><span>Nächster</span><div id="next-grid" class="next-mini-grid"></div></div>
+    </div>
+
+    <div id="game-area">
+      <div id="tetris-grid"></div>
+      <div id="overlay">
+        <h1 id="game-over">GAME OVER</h1>
+        <button id="restart">Nochmal spielen</button>
+      </div>
+    </div>
+
+    <div class="bottom-ui">
+      <div>Punkte: <span id="score">0</span></div>
+      <button id="pause">⏸</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
