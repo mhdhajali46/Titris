@@ -98,6 +98,11 @@ function draw() {
   });
 }
 
+function undraw() {
+  currentTetromino.rotations[currentRotation].forEach(index => {
+    cells[currentPosition + index].classList.remove("filled", currentTetromino.color);
+  });
+}
 
 function moveDown() {
   if (isPaused || isGameOver) return;
